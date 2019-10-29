@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="full-page">
+
+        <div class="header">
+            <h1><b>Регистрация</b></h1>
+        </div>
+        <div class="form-area">
+            <form id="form" class="form">
+                <div class="form-item">
+                    <label for="name">Ваше имя</label>
+                    <input id="name" placeholder="  Введите ваше имя" maxlength="20" required type="text" name="name">
+                    <div id="error" class="error"></div>
+                </div>
+                <div class="form-item">
+                    <label for="secname">Ваша фамилия</label>
+                    <input id="secname" placeholder="  Введите вашу фамилию" maxlength="20" required type="text" name="secname">
+                    <div id="error" class="error"></div>
+                </div>     
+                <div class="form-item">
+                    <label for="surname">Ваше отчество</label>
+                    <input id="surname" placeholder="  Введите ваше отчество" maxlength="20" required type="text" name="surname" pattern="^([\p{Lu}\p{Lt}]\p{Ll}+)+$" ><br>
+                </div>
+                <div class="form-item">
+                    <label for="email">Ваш адрес электронной почты</label>
+                    <input id="email" maxlength="300" required type="email" placeholder="  Введите ваш адрес электронной почты" name="email">
+                    <div id="error" class="error"></div>
+                </div> 
+                <div class="form-item"><br>
+                    <label for="password">Ваш пароль</label>
+                    <input id="password" required type="password"  placeholder="  Введите ваш пароль" minlength="10" maxlength="300" name="password">
+                    <div id="error" class="error"></div>
+                </div>
+                <div class="form-item">
+                    <label for="date">Ваша дата рождения</label>
+                    <input id="date" min="1900-01-01" max="2015-01-01" type="date" name="date">
+                    <div id="error" class="error"></div>
+                </div>
+                <div class="form-item">
+                    <label for="sex">Выберите ваш пол:</label> <br>
+                <select id="sex" name="sex">
+                    <option value="Не выбран">Не выбран</option>
+                    <option value="Женский">Женский</option>
+                    <option value="Мужской">Мужской</option>
+                </select>
+                    <div id="error" class="error"></div>
+                </div>
+                <div class="form-submit">
+                    <input class="submit" type="submit" name="Зарегистрироваться">
+                    <div id="error" class="error"></div>
+                </div>
+                <div id="footer">   
+              
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
